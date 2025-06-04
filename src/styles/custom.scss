@@ -1,0 +1,152 @@
+// ======================
+// Основные переменные Bootstrap до import
+// ======================
+
+// Базовые цвета, шрифт, контейнеры
+$body-bg: #1d242c;
+$body-color: #f5f6fa;
+$primary: #41606e;
+$secondary: #3b4047;
+$success: #4fd694;
+$warning: #ffa502;
+$danger: #e84118;
+$info: #1e90ff;
+$light: #f8f9fa;
+$dark: #181a1b;
+
+$font-family-sans-serif: 'Roboto', Arial, Helvetica, sans-serif;
+$font-size-base: 1rem;
+$link-color: $primary;
+
+// Контейнеры (для максимальной "резиновости")
+$container-max-widths: (
+  sm: 100%,
+  md: 720px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+// Элементы header/footer
+$navbar-bg: linear-gradient(90deg, #29313a 0%, #253143 100%);
+$navbar-padding-y: 1.1rem;
+$navbar-dark-color: #f5f6fa;
+
+// Импорт Bootstrap со своими переменными
+@import "~bootstrap/scss/bootstrap";
+
+// ======================
+// Кастомные стили
+// ======================
+
+// == Header / Navbar ==
+.header-navbar {
+  background: $navbar-bg;
+  .navbar-brand img {
+    height: 42px;
+    width: auto;
+    filter: drop-shadow(1px 2px 6px #12393244);
+  }
+  .nav-link {
+    color: #e9eefb;
+    font-weight: 500;
+    margin-right: 1rem;
+    transition: color 0.15s;
+    &:hover,
+    &.active {
+      color: $warning;
+    }
+  }
+  .dropdown-menu {
+    background: $secondary;
+    .dropdown-item {
+      color: $light;
+      &:hover {
+        background: darken($secondary, 5%);
+        color: $primary;
+      }
+    }
+  }
+}
+
+// == Footer ==
+.site-footer {
+  background: $secondary;
+  color: $light;
+  padding: 2rem 0 1rem;
+  .footer-logo {
+    max-width: 110px;
+    margin-bottom: 1rem;
+  }
+  a {
+    color: $info;
+    &:hover { text-decoration: underline; }
+  }
+  .footer-socials svg {
+    fill: #fff;
+    transition: fill 0.15s;
+    &:hover { fill: $warning; }
+    margin-right: .8rem;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// == Блоки и карточки ==
+.card {
+  background: rgba($dark, 0.98);
+  border-radius: 12px;
+  border: 1px solid #223245;
+  .card-header {
+    background: transparent;
+    font-weight: 500;
+    color: $info;
+  }
+  .card-title {
+    font-size: 1.15rem;
+  }
+}
+
+.section-title {
+  color: $warning;
+  margin-bottom: 1.25rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.ratio {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(48,74,142,0.14);
+}
+
+// == Скроллбар (тёмный стиль)==
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: $primary;
+}
+
+// == Адаптивные мелкие правки ==
+@media (max-width: 767px) {
+  .header-navbar .nav-link {
+    margin-right: 0;
+    padding: .7rem 1rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .site-footer {
+    font-size: .96rem;
+  }
+}
+
+// == Вспомогательные utility-классы ==
+.text-faded { color: #b2b8c6; }
+.bg-dark-gradient {
+  background: linear-gradient(90deg, #1d242c 10%, #253555 100%);
+}
+.rounded-12 { border-radius: 12px !important; }
+
