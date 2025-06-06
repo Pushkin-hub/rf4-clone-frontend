@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from './components/Footer';
@@ -7,7 +8,6 @@ import Forum from "./pages/Forum";
 import Home from './pages/Home';
 import './styles/custom.scss';
 
-// ...другие страницы
 
 const App = () => {
   return (
