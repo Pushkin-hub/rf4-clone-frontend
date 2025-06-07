@@ -5,7 +5,7 @@ import { Row, Col, Card, Container } from "react-bootstrap";
 
 export default function Fishes() {
   const [fishes, setFishes] = useState([]);
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(); 
   useEffect(() => {
     axios.get("/api/fishes.php").then(r => setFishes(r.data));
   }, []);

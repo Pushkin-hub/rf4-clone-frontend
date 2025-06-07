@@ -1,9 +1,8 @@
-// src/pages/Waters.jsx
 import React from 'react';
 import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-// Примерные водоемы
+// Водоемы
 const watersList = [
   {
     id: 1,

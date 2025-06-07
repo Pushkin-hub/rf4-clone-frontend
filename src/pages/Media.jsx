@@ -1,4 +1,3 @@
-// src/components/Media.jsx
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -19,7 +18,7 @@ const screenshots = [
     alt: 'Скриншот 3',
     caption: 'Трофейная рыба'
   }
-  // Добавляй новые скриншоты в этом массиве!
+  // Добавляй новые скриншоты!
 ];
 
 const trailers = [
@@ -31,7 +30,7 @@ const trailers = [
     src: 'https://www.youtube.com/embed/cQUuFh8R92s',
     title: 'Трейлер №2'
   }
-  // Добавляй youtube/vimeo id или src для новых видео!
+  // youtube/vimeo id или src для новых видео!
 ];
 
 function Media() {

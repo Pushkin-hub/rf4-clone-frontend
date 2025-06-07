@@ -1,4 +1,3 @@
-// src/components/LanguageSwitcher.jsx
 import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';

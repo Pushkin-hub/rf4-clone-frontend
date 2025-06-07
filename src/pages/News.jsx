@@ -1,9 +1,8 @@
-// src/pages/News.jsx
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-// Пример новости
+// Новости
 const newsList = [
   {
     id: 1,

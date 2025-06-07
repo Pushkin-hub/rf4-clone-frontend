@@ -1,4 +1,3 @@
-// src/pages/Rating.jsx
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
