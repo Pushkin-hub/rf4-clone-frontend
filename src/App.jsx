@@ -7,6 +7,7 @@ import Waters from "./pages/Waters";
 import Forum from "./pages/Forum";
 import Home from './pages/Home';
 import './styles/custom.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
