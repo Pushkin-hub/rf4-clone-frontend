@@ -27,7 +27,7 @@ export default function Header() {
           <Nav.Link href="/forum">{t("forum")}</Nav.Link>
           <Nav.Link href="/login">{t("login")}</Nav.Link>
           <Nav.Link href="/register">{t("register")}</Nav.Link>
-          <NavDropdown title={i18n.language.toUpperCase()} id="nav-lang">
+          <NavDropdown title = {(typeof i18n.language === 'string' && i18n.language) ? i18n.language.toUpperCase() : 'RU'} id="nav-lang">
             {LANGS.map(({ code, label }) => (
               <NavDropdown.Item key={code}
                 onClick={() => i18n.changeLanguage(code)}>
