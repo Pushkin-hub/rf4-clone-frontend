@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 import { useTranslation } from 'react-i18next';
 
 const LANGS = [
@@ -15,7 +15,7 @@ export default function Header() {
     <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
       <Navbar.Brand href="/">
         <img src={logo} width="45" alt="logo" className="mr-2" />
-        {t("siteName")}
+        {t("Русская  рыбалка 4")}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="rf4-navbar" />
       <Navbar.Collapse id="rf4-navbar">

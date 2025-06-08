@@ -24,7 +24,12 @@ const LanguageSwitcher = () => {
   return (
     <Dropdown align="end" className="d-inline mx-2">
       <Dropdown.Toggle variant="outline-light" size="sm" id="dropdown-lang">
-        {LANGUAGES.find(l => l.code === i18n.language)?.label || i18n.language.toUpperCase()}
+        {(() => {
+          const cur = LANGUAGES.find(l => l.code === i18n.language);
+          if (cur) return cur.label;
+          if (typeof i18n.language === 'string' && i18n.language.length > 0) return i18n.language.toUpperCase();
+          return 'RU';
+        })()}
       </Dropdown.Toggle>
       <Dropdown.Menu>
         {LANGUAGES.map(lang => (

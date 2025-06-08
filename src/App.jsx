@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import Fishes from "./pages/Fishes";
@@ -21,7 +21,8 @@ const App = () => {
         <Route path="/waters" component={Waters} />
         <Route path="/forum" component={Forum} />
         {/* ... */}
-        <Route path="*"><div>404</div></Route>
+        <Route path="/404" Component={ () => (<div>404</div>)}/>
+        {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
       </Routes>
       <Footer />
       </div>
