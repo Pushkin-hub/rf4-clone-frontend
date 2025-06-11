@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import LanguageSwitcher from './LanguageSwitcher';
+// import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer = () => (
   <footer className="bg-dark text-light py-4 mt-auto">
@@ -19,7 +19,7 @@ const Footer = () => (
         <Col md={4} className="text-md-end text-center">
           <a href="/privacy" className="text-light mx-2">Политика конфиденциальности</a>
           <a href="/terms" className="text-light mx-2">Правила</a>
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
         </Col>
       </Row>
     </Container>
