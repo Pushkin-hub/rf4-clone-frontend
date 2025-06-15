@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
 
 const Login = () => {
-  const { t } = useTranslation();
   const [form, setForm] = useState({ email: '', password: '' });
   const [err, setErr] = useState('');
   const [isLoading, setLoading] = useState(false);
@@ -19,7 +17,7 @@ const Login = () => {
       // Логика успеха: редирект или изменение состояния
       alert('Успешный вход! (псевдо)');
     } else {
-      setErr(t('login.invalid', 'Неверные данные для входа.'));
+      setErr(('login.invalid', 'Неверные данные для входа.'));
     }
     setLoading(false);
   };
@@ -28,11 +26,11 @@ const Login = () => {
     <Container className="py-4">
       <Row className="justify-content-center">
         <Col md={6} lg={4}>
-          <h2 className="mb-4">{t('login.title', 'Вход')}</h2>
+          <h2 className="mb-4">{('login.title', 'Вход')}</h2>
           {err && <Alert variant="danger">{err}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="loginEmail" className="mb-3">
-              <Form.Label>{t('login.email', 'Email или Логин')}</Form.Label>
+              <Form.Label>{('login.email', 'Email или Логин')}</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -43,7 +41,7 @@ const Login = () => {
               />
             </Form.Group>
             <Form.Group controlId="loginPassword" className="mb-3">
-              <Form.Label>{t('login.password', 'Пароль')}</Form.Label>
+              <Form.Label>{('login.password', 'Пароль')}</Form.Label>
               <Form.Control
                 type="password"
                 name="password"
@@ -53,7 +51,7 @@ const Login = () => {
               />
             </Form.Group>
             <Button type="submit" variant="primary" disabled={isLoading} className="w-100">
-              {t('login.enterBtn', 'Войти')}
+              {('login.enterBtn', 'Войти')}
             </Button>
           </Form>
         </Col>

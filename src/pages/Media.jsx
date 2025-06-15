@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 const screenshots = [
   {
@@ -34,14 +32,13 @@ const trailers = [
 ];
 
 function Media() {
-  const { t } = useTranslation();
 
   return (
     <div className="container py-4">
-      <h1 className="mb-4">{t('media.title')}</h1>
+      <h1 className="mb-4">{('media.title')}</h1>
 
       <section className="mb-5">
-        <h2 className="h4 mb-3">{t('media.screenshots')}</h2>
+        <h2 className="h4 mb-3">{('media.screenshots')}</h2>
         <div className="row">
           {screenshots.map((img, idx) => (
             <div className="col-12 col-sm-6 col-md-4 mb-3" key={idx}>
@@ -62,7 +59,7 @@ function Media() {
       </section>
 
       <section>
-        <h2 className="h4 mb-3">{t('media.trailers')}</h2>
+        <h2 className="h4 mb-3">{('media.trailers')}</h2>
         <div className="row">
           {trailers.map((video, idx) => (
             <div className="col-12 col-md-6 mb-4" key={idx}>

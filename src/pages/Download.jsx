@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
 
 const downloadLinks = [
   {
@@ -29,14 +28,13 @@ const downloadLinks = [
 ];
 
 const Download = () => {
-  const { t } = useTranslation();
 
   return (
     <Container className="py-4">
       <Row className="justify-content-center mb-4">
         <Col md={8}>
-          <h2 className="mb-3">{t('download.title', 'Скачать Русская Рыбалка 4')}</h2>
-          <p className="lead">{t('download.lead', 'Выберите Вашу платформу и загрузите клиент игры. Все установщики безопасны и проходят проверку на вирусы.')}</p>
+          <h2 className="mb-3">{('download.title', 'Скачать Русская Рыбалка 4')}</h2>
+          <p className="lead">{('download.lead', 'Выберите Вашу платформу и загрузите клиент игры. Все установщики безопасны и проходят проверку на вирусы.')}</p>
         </Col>
       </Row>
       <Row className="justify-content-center">
@@ -51,9 +49,9 @@ const Download = () => {
                     style={{ width: '48px', height: '48px', marginBottom: '1rem' }}
                   />
                 )}
-                <Card.Title>{t(`download.platform.${link.platform.toLowerCase()}`, link.platform)}</Card.Title>
+                <Card.Title>{(`download.platform.${link.platform.toLowerCase()}`, link.platform)}</Card.Title>
                 <Card.Text>
-                  {t('download.size', 'Размер')}: {link.size}
+                  {('download.size', 'Размер')}: {link.size}
                 </Card.Text>
                 <Button
                   variant="primary"
@@ -63,7 +61,7 @@ const Download = () => {
                   target="_blank"
                   download
                 >
-                  {t('download.downloadBtn', 'Скачать')}
+                  {('download.downloadBtn', 'Скачать')}
                 </Button>
               </Card.Body>
             </Card>
@@ -74,9 +72,9 @@ const Download = () => {
         <Col md={8}>
           <Card bg="light">
             <Card.Body>
-              <Card.Title>{t('download.helpTitle', 'Не получается скачать или запустить игру?')}</Card.Title>
+              <Card.Title>{('download.helpTitle', 'Не получается скачать или запустить игру?')}</Card.Title>
               <Card.Text>
-                {t(
+                {(
                   'download.helpText',
                   'Если у Вас возникли проблемы с загрузкой или установкой клиента, обратитесь в службу поддержки или посетите наш форум.'
                 )}

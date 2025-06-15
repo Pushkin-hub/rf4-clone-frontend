@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
 
 // Новости
 const newsList = [
@@ -21,11 +20,10 @@ const newsList = [
 ];
 
 const News = () => {
-  const { t } = useTranslation();
 
   return (
     <Container className="py-4">
-      <h2 className="mb-4">{t('news.title', 'Новости проекта')}</h2>
+      <h2 className="mb-4">{('news.title', 'Новости проекта')}</h2>
       <Row>
         {newsList.map(news => (
           <Col lg={6} key={news.id} className="mb-4">

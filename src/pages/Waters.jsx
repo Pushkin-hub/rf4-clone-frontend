@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
 
 // Водоемы
 const watersList = [
@@ -23,11 +22,10 @@ const watersList = [
 ];
 
 const Waters = () => {
-  const { t } = useTranslation();
 
   return (
     <Container className="py-4">
-      <h2 className="mb-4">{t('waters.title', 'Водоемы')}</h2>
+      <h2 className="mb-4">{('waters.title', 'Водоемы')}</h2>
       <Row>
         {watersList.map(water => (
           <Col lg={6} key={water.id} className="mb-4">

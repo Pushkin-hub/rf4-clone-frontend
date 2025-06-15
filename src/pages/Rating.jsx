@@ -10,18 +10,17 @@ const ratingList = [
 ];
 
 const Rating = () => {
-  const { t } = useTranslation();
 
   return (
     <Container className="py-4">
-      <h2 className="mb-4">{t('rating.title', 'Рейтинг игроков')}</h2>
+      <h2 className="mb-4">{('rating.title', 'Рейтинг игроков')}</h2>
       <Table striped bordered hover responsive>
         <thead>
           <tr>
             <th>#</th>
-            <th>{t('rating.player', 'Игрок')}</th>
-            <th>{t('rating.country', 'Страна')}</th>
-            <th>{t('rating.score', 'Очки')}</th>
+            <th>{('rating.player', 'Игрок')}</th>
+            <th>{('rating.country', 'Страна')}</th>
+            <th>{('rating.score', 'Очки')}</th>
           </tr>
         </thead>
         <tbody>

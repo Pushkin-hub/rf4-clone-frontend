@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-// import LanguageSwitcher from './LanguageSwitcher';
 
 const Footer = () => (
   <footer className="bg-dark text-light py-4 mt-auto">
