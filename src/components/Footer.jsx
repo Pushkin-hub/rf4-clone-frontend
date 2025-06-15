@@ -19,7 +19,6 @@ const Footer = () => (
         <Col md={4} className="text-md-end text-center">
           <a href="/privacy" className="text-light mx-2">Политика конфиденциальности</a>
           <a href="/terms" className="text-light mx-2">Правила</a>
-          {/* <LanguageSwitcher /> */}
         </Col>
       </Row>
     </Container>
