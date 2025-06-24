@@ -1,8 +1,9 @@
 import React from 'react';
+import Belaya from '../assets/belaya_01.jpg';
 
 const screenshots = [
   {
-    src: '/media/screenshot1.jpg',
+    src: Belaya,
     alt: 'Скриншот 1',
     caption: 'Лучшие туманные угодья'
   },
@@ -44,10 +45,11 @@ function Media() {
             <div className="col-12 col-sm-6 col-md-4 mb-3" key={idx}>
               <div className="card h-100 shadow-sm">
                 <img
-                  src={img.src}
+                  src={img.src}//src={Belaya} работает не так, как надо
                   className="card-img-top img-fluid rounded"
                   alt={img.alt}
                   loading="lazy"
+                  style={{width: "200px", height: "100px"}}
                 />
                 <div className="card-body py-2">
                   <p className="card-text small text-muted">{img.caption}</p>
