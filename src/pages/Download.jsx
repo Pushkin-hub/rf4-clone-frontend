@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import Logo from '../assets/RF4_logo_b.png';
 
 const downloadLinks = [
   {
@@ -44,7 +45,7 @@ const Download = () => {
               <Card.Body>
                 {link.icon && (
                   <img
-                    src={link.icon}
+                    src={Logo}
                     alt={link.platform}
                     style={{ width: '48px', height: '48px', marginBottom: '1rem' }}
                   />
@@ -69,14 +70,85 @@ const Download = () => {
         ))}
       </Row>
       <Row className="justify-content-center mt-3">
-        <Col md={8}>
+        <Col md={4}>
           <Card bg="light">
             <Card.Body>
-              <Card.Title>{('download.helpTitle', 'Не получается скачать или запустить игру?')}</Card.Title>
+              <Card.Title>{('Минимальные системные требования')}</Card.Title>
               <Card.Text>
                 {(
-                  'download.helpText',
-                  'Если у Вас возникли проблемы с загрузкой или установкой клиента, обратитесь в службу поддержки или посетите наш форум.'
+                  'Процессор: Intel® i3 3Ghz'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Видео: GTX 760 series'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Память: 8Gb'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Свободное место на жестком диске: 40 Gb'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Разрешение экрана: 1280×768'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'ОС: Windows 7/8/10 64-бита'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Стабильное интернет соединение'
+                )}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card bg="light">
+            <Card.Body>
+              <Card.Title>{('Рекомендуемые системные требования')}</Card.Title>
+              <Card.Text>
+                {(
+                  'Процессор: Intel® i5 3.5Ghz'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Видео: GTX 1060'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Память: 8Gb'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Свободное место на жестком диске: 40 Gb'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Разрешение экрана: 1920×1080'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'ОС: Windows 10 64-бита'
+                )}
+              </Card.Text>
+              <Card.Text>
+                {(
+                  'Стабильное интернет соединение'
                 )}
               </Card.Text>
             </Card.Body>

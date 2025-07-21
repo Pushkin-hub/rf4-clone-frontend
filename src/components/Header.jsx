@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import logo from '../assets/logo.svg';
+import Logo from '../assets/RF4_logo_b.png';
 
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
       <Navbar.Brand href="/">
-        <img src={logo} width="50" alt="logo" className="mr-2" />
+        <img src={Logo} width="50" alt="logo" className="mr-2" />
         {("Русская  рыбалка 4")}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="rf4-navbar" />

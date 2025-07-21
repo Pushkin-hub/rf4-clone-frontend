@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Waters from './Waters';
+import Logo from '../assets/RF4_logo_b.png';
 
 const Home = () => {
 
@@ -15,7 +16,7 @@ const Home = () => {
             <Button href="/news" variant="outline-secondary" size="lg">{('home.news', 'Новости проекта')}</Button>
           </Col>
           <Col md={6} className="d-none d-md-block">
-            <img src="/assets/hero_rf4.jpg" alt="Главная картинка" className="img-fluid rounded shadow" />
+            <img src= {Logo} alt="Главная картинка" className="img-fluid rounded shadow" />
           </Col>
           <Col md={10}>
             <br/>
