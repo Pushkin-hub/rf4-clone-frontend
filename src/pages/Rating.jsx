@@ -12,6 +12,17 @@ const ratingList = [
   { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
   { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
   { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
 ];
 
 const Rating = () => {
