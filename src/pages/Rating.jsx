@@ -7,6 +7,11 @@ const ratingList = [
   { id: 1, username: 'FishMaster404', country: 'RU', score: 9945 },
   { id: 2, username: 'TrophyHunter', country: 'DE', score: 8700 },
   { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
+  { id: 3, username: 'ProFisher', country: 'EN', score: 8250 },
 ];
 
 const Rating = () => {
