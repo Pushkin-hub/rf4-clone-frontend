@@ -161,7 +161,7 @@ function Media() {
         <div className="row">
           {screenshots.map((img, idx) => (
             <div className="col-12 col-sm-6 col-md-4 mb-3" key={idx}>
-              <div className="card h-100 shadow-sm">
+              <div className="h-100">
                 <img
                   src={img.src}
                   className="card-img-top img-fluid rounded"
