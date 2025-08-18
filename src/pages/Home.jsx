@@ -16,7 +16,7 @@ const Home = () => {
             <Button href="/news" variant="outline-secondary" size="lg">{('home.news', 'Новости проекта')}</Button>
           </Col>
           <Col md={6} className="d-none d-md-block">
-            <img src= {Logo} alt="Главная картинка" className="img-fluid rounded shadow" />
+            <img src= {Logo} alt="Главная картинка" className="img-fluid rounded" />
           </Col>
           <Col md={10}>
             <br/>

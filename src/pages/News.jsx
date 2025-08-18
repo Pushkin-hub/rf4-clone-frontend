@@ -1,53 +1,63 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import RU_tehnicheskie from '../assets/RU_tehnicheskie.jpg';
-import DenRyibaka from '../assets/DenRyibaka.jpg';
+import RU_tehnicheskie from '../assets/news_img/RU_tehnicheskie.jpg';
+import DenRyibaka from '../assets/news_img/DenRyibaka.jpg';
+import PatchNout from '../assets/news_img/PatchNout.jpg';
+import Perezagruzka from '../assets/news_img/Perezagruzka.jpg';
+import Obnovlenie from '../assets/news_img/Obnovlenie.jpg';
+import LosinoeNews from '../assets/news_img/LosinoeNews.jpg';
 // Новости
 const newsList = [
   {
     id: 1,
     title: 'Технические работы',
-    date: '28-07-2025',
+    date: '28.07.2025',
     summary: '29 июля в 00 МСК игровой сервер будет остановлен для проведения технических работ. Время работы ~2 часа.',
     image: RU_tehnicheskie,
   },
   {
     id: 2,
     title: 'Турнир “День рыбака”',
-    date: '05-07-2025',
+    date: '05.07.2025',
     summary: 'Дорогие друзья! С 7 по 13 июля состоится праздничный тернир "день рыбака".',
     image: DenRyibaka,
   },
   {
     id: 3,
-    title: 'Турнир “Весенний улов”',
-    date: '2024-05-25',
-    summary: 'Стартует новый международный онлайн-турнир.',
-    image: '/assets/news2.jpg',
+    title: 'Патчноут 18.06.2025',
+    date: '18.06.2025',
+    summary: 'Лодка, расположенная на оз. Лосиное, оборудована стаканами для удилищ. Исправлено. Некоторые игроки не могли войти в игру из-за ошибки при проверке никнейма. Исправлено. У некоторых игроков после предыдущего обновления мог уменьшиться трофейный рейтинг. Перерасчёт рейтинга произойдет автоматически при поимке очередного трофея. Исправлено. Опыт за поимку белого краппи начислялся неверно.',
+    image: PatchNout,
   },
   {
     id: 4,
-    title: 'Турнир “Весенний улов”',
-    date: '2024-05-25',
-    summary: 'Стартует новый международный онлайн-турнир.',
-    image: '/assets/news2.jpg',
+    title: 'Перезагрузка сервера и обновление клиента',
+    date: '17.06.2025',
+    summary: '18 июня 2025 в 00:00 МСК будут выполнены перезагрузка сервера и обновление клиента игры. Время работ ~2ч',
+    image: Perezagruzka,
   },
   {
     id: 5,
-    title: 'Турнир “Весенний улов”',
-    date: '2024-05-25',
-    summary: 'Стартует новый международный онлайн-турнир.',
-    image: '/assets/news2.jpg',
+    title: 'Патчноут 16.06.2025',
+    date: '16.06.2025',
+    summary: 'Добавлен новый водоем - оз. Лосиное. Данный водоем доступен игрокам всех уровней. На компьютерах, не удовлетворяющих минимальным системным требованиям, переход на оз. Лосиное невозможно',
+    image: PatchNout,
   },
   {
     id: 6,
-    title: 'Турнир “Весенний улов”',
-    date: '2024-05-25',
-    summary: 'Стартует новый международный онлайн-турнир.',
-    image: '/assets/news2.jpg',
+    title: 'Перезагрузка сервера и обновление клиента',
+    date: '15.06.2025',
+    summary: '16.06.2025 в 9:00 будут выполнены перезагрузка сервера и обновление клиента. Время работ ~6 часов',
+    image: Obnovlenie,
   },
   {
     id: 7,
+    title: 'Добро пожаловать на Лосиное озеро',
+    date: '13.06.2025',
+    image: LosinoeNews,
+  },
+  {
+    id: 8,
     title: 'Турнир “Весенний улов”',
     date: '2024-05-25',
     summary: 'Стартует новый международный онлайн-турнир.',
