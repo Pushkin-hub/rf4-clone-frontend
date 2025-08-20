@@ -6,6 +6,9 @@ import PatchNout from '../assets/news_img/PatchNout.jpg';
 import Perezagruzka from '../assets/news_img/Perezagruzka.jpg';
 import Obnovlenie from '../assets/news_img/Obnovlenie.jpg';
 import LosinoeNews from '../assets/news_img/LosinoeNews.jpg';
+import LosinoeNews2 from '../assets/news_img/LosinoeNews2.png';
+import Skidki from '../assets/news_img/Skidki.jpg';
+
 // Новости
 const newsList = [
   {
@@ -58,11 +61,24 @@ const newsList = [
   },
   {
     id: 8,
-    title: 'Турнир “Весенний улов”',
-    date: '2024-05-25',
-    summary: 'Стартует новый международный онлайн-турнир.',
-    image: '/assets/news2.jpg',
+    title: 'Перезагрузка сервера и обновление клиента',
+    date: '28.05.2025',
+    summary: '29.05.2025 в 1:00 МСК будет выполнена перезагрузка сервера и обновление клиента. Время работ ~ 2 часа.',
+    image: Perezagruzka,
   },
+  {
+    id: 9,
+    title: 'Навстречу новым приключениям',
+    date: '25.05.2025',
+    image: LosinoeNews2,
+  },
+  {
+    id: 10,
+    title: 'Весенние скидки',
+    date: '24.05.2025',
+    summary: 'С 12:00 МСК 24.05.2025 до 12:00 МСК 02.06.2025 скидки на: золото - 25%, премиум - 25%',
+    image: Skidki,
+  }
 ];
 
 const News = () => {
