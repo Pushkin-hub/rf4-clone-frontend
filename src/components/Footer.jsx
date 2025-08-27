@@ -16,8 +16,8 @@ const Footer = () => (
           <a href="#" className="text-light mx-2" aria-label="VK"><i className="bi bi-vk"></i></a>
         </Col>
         <Col md={4} className="text-md-end text-center">
-          <a href="/privacy" className="text-light mx-2">Политика конфиденциальности</a>
-          <a href="/terms" className="text-light mx-2">Правила</a>
+          <a href="https://rf4game.ru/privacy" className="text-light mx-2">Политика конфиденциальности</a>
+          <a href="https://rf4game.ru/rules" className="text-light mx-2">Правила</a>
         </Col>
       </Row>
     </Container>
