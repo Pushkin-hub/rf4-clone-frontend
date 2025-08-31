@@ -1,25 +1,29 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Footer = () => (
   <footer className="bg-dark text-light py-4 mt-auto">
     <Container fluid>
       <Row className="align-items-center">
-        <Col md={4} className="mb-3 mb-md-0">
+        <Col md={9} className="mb-3 mb-md-0">
           <div>
             <b>© {new Date().getFullYear()} Русская рыбалка 4</b>
           </div>
         </Col>
-        <Col md={4} className="mb-3 mb-md-0 text-center">
-          {/* Место для соцсетей */}
-          <a href="#" className="text-light mx-2" aria-label="Discord"><i className="bi bi-discord"></i></a>
-          <a href="#" className="text-light mx-2" aria-label="VK"><i className="bi bi-vk"></i></a>
-        </Col>
-        <Col md={4} className="text-md-end text-center">
-          <a href="https://rf4game.ru/privacy" className="text-light mx-2">Политика конфиденциальности</a>
-          <a href="https://rf4game.ru/rules" className="text-light mx-2">Правила</a>
+        <Col md={3} className="text-md-end text-center">
+          <Navbar expand="lg" bg="dark" variant="dark" sticky="top">
+            <Navbar.Toggle aria-controls="rf4-navbar" />
+            <Navbar.Collapse id="rf4-navbar">
+              <Nav className="ml-auto">
+                <Nav.Link href="/privacyPolicy">{("Политика конфиденциальности")}</Nav.Link>
+                <Nav.Link href="/rules">{("Правила")}</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
         </Col>
       </Row>
+
     </Container>
   </footer>
 );

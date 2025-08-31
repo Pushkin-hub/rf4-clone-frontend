@@ -12,6 +12,8 @@ import Media from "./pages/Media";
 import Rating from "./pages/Rating";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
+import Rules from "./pages/Rules";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import './styles/custom.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -32,6 +34,8 @@ const App = () => {
         <Route path="/rating" Component={Rating} />
         <Route path="/login" Component={Login} />
         <Route path="/register" Component={Register} />
+        <Route path="/rules" Component={Rules} />
+        <Route path="/privacyPolicy" Component={PrivacyPolicy} />
         {/* ... */}
         <Route path="/404" Component={ () => (<div>404</div>)}/>
         {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
