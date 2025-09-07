@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
+import axios from 'axios';
 
 const Login = () => {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -12,14 +13,31 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     setErr('');
-    // Здесь будет вызов бекенда, сейчас просто имитация
-    if (form.email === 'test@test.com' && form.password === '1234') {
-      // Логика успеха: редирект или изменение состояния
-      alert('Успешный вход! (псевдо)');
-    } else {
-      setErr(('login.invalid', 'Неверные данные для входа.'));
+
+    try {
+      const response = await axios.post('http://localhost:3001/api/login', form); // Замените URL при необходимости
+
+      console.log('Успешный вход:', response.data);
+
+     if(response.status === 200 && response.data.token){
+        localStorage.setItem('token', response.data.token);
+
+        window.location.href = '/profile';
+      } else {
+        setErr('Ошибка при получении токена.');
+      }
+
+    } catch (error) {
+      console.error('Ошибка входа:', error);
+      if(error.response){
+          setErr(error.response.data?.message || 'Неизвестная ошибка');
+      } else {
+        setErr('Ошибка соединения с сервером.');
+      }
+
+    } finally{
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (

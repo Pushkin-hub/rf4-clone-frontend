@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
+import axios from 'axios';
 
 const Register = () => {
   const [form, setForm] = useState({ email: '', password: '', confirm: '' });
@@ -12,15 +13,36 @@ const Register = () => {
     e.preventDefault();
     setErr('');
     if (form.password !== form.confirm) {
-      setErr(('register.pwdMismatch', 'Пароли не совпадают'));
+      setErr('Пароли не совпадают');
       return;
     }
-    // Здесь будет вызов бекенда
+
     if (!form.email.includes('@')) {
-      setErr(('register.badEmail', 'Неверный email'));
+      setErr('Неверный email');
       return;
     }
-    setSuccess(true);
+
+    try {
+      const response = await axios.post('http://localhost:3001/api/register', form); // Замените URL при необходимости
+
+      console.log('Успешная регистрация:', response.data);
+
+      if (response.status === 201) {
+        setSuccess(true);
+        // Опционально: редирект на страницу входа или другую страницу
+        // window.location.href = '/login';
+      } else {
+        setErr('Ошибка при регистрации.');
+      }
+
+    } catch (error) {
+      console.error('Ошибка регистрации:', error);
+      if (error.response) {
+        setErr(error.response.data?.message || 'Неизвестная ошибка');
+      } else {
+        setErr('Ошибка соединения с сервером.');
+      }
+    }
   };
 
   return (
