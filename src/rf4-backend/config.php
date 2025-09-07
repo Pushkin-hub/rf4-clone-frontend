@@ -1,5 +1,5 @@
 <?php
-$dbPath = 'rf4game.db'; // Путь к файлу базы данных SQLite
+$dbPath = 'rf4game.db';
 
 function dbConnect($path) {
   try {
@@ -9,5 +9,5 @@ function dbConnect($path) {
   }
 }
 
-$db = dbConnect($dbPath); // Установите глобальное подключение к базе данных
+$db = dbConnect($dbPath);
 ?>
