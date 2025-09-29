@@ -10,4 +10,3 @@ function dbConnect($path) {
 }
 
 $db = dbConnect($dbPath);
-?>
