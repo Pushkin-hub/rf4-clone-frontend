@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
+import * as apiService from '../../api/apiService';
 
 const Login = () => {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -15,7 +16,7 @@ const Login = () => {
     setErr('');
 
     try {
-      const response = await axios.post('http://localhost:8000/api/login', form); // Замените URL при необходимости
+      const response = await apiService.loginUser; // Замените URL при необходимости
 
       console.log('Успешный вход:', response.data);
 

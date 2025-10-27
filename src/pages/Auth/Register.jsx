@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
+import * as apiService from '../../api/apiService';
 
 const Register = () => {
   const [form, setForm] = useState({ email: '', password: '', confirm: '' });
@@ -23,14 +24,15 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/register', form); // Замените URL при необходимости
+      const response = await apiService.registerUser; // Замените URL при необходимости
 
       console.log('Успешная регистрация:', response.data);
 
       if (response.status === 201) {
         setSuccess(true);
         // Опционально: редирект на страницу входа или другую страницу
-        // window.location.href = '/login';
+        window.location.href = '/login';
+        ///////////////////////////////////////////////////////////
       } else {
         setErr('Ошибка при регистрации.');
       }
