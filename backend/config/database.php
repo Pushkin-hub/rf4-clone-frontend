@@ -4,21 +4,21 @@ class Database {
     private $db_name = DB_NAME;
     private $username = DB_USER;
     private $password = DB_PASS;
+    private $charset = 'utf8mb4';
     public $conn;
 
     public function getConnection() {
         $this->conn = null;
+        
         try {
-            $this->conn = new PDO(
-                "mysql:host=" . $this->host . ";dbname=" . $this->db_name,
-                $this->username,
-                $this->password
-            );
-            $this->conn->exec("set names utf8");
+            $dsn = "mysql:host=" . $this->host . ";dbname=" . $this->db_name . ";charset=" . $this->charset;
+            $this->conn = new PDO($dsn, $this->username, $this->password);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
         } catch(PDOException $exception) {
-            echo "Connection error: " . $exception->getMessage();
+            throw new Exception("Database connection failed: " . $exception->getMessage());
         }
+        
         return $this->conn;
     }
 }
