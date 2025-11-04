@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
-import * as apiService from '../../api/apiService';
 
 const Register = () => {
   const [form, setForm] = useState({ email: '', password: '', confirm: '' });
@@ -24,7 +23,7 @@ const Register = () => {
     }
 
     try {
-      const response = await apiService.registerUser; // Замените URL при необходимости
+      const response = axios.post('http://localhost:5000/api/register'); // Замените URL при необходимости
 
       console.log('Успешная регистрация:', response.data);
 
