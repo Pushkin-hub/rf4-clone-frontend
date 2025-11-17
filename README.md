@@ -47,3 +47,13 @@ npm start
 cd backend/public
 php -S localhost:8000
 ```  
+
+Чтобы зайти в _Adminer_, скачайте _Docker Desktop_ и в кансоле напишите следующую команду:
+
+```bash
+docker compose up
+```  
+
+Запускает приложение в режиме разработки. Чтобы просмотреть его в браузере,  
+откройте http://localhost:8080 .  
+В файле compose.yaml вы найдете логин, пароль и базу данных для входа в _Adminer_.
