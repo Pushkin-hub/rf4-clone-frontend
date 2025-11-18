@@ -93,7 +93,7 @@ BEGIN
 END//
 DELIMITER ;
 
-
+-- nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 
 CREATE TABLE fish (
     id INT PRIMARY KEY AUTO_INCREMENT,
