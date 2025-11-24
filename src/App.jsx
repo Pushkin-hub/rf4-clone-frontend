@@ -24,20 +24,20 @@ const App = () => {
       <div className="d-flex flex-column min-vh-100">
       <Header />
       <Routes>
-        <Route exact path="/" Component={Home} />
-        <Route path="/fishes" Component={Fishes} />
-        <Route path="/waters" Component={Waters} />
-        <Route path="/forum" Component={Forum} />
-        <Route path="/download" Component={Download} />
-        <Route path="/news" Component={News} />
-        <Route path="/media" Component={Media} />
-        <Route path="/rating" Component={Rating} />
-        <Route path="/login" Component={Login} />
-        <Route path="/register" Component={Register} />
-        <Route path="/rules" Component={Rules} />
-        <Route path="/privacyPolicy" Component={PrivacyPolicy} />
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/fishes" element={<Fishes/>} />
+        <Route path="/waters" element={<Waters/>} />
+        <Route path="/forum" element={<Forum/>} />
+        <Route path="/download" element={<Download/>} />
+        <Route path="/news" element={<News/>} />
+        <Route path="/media" element={<Media/>} />
+        <Route path="/rating" element={<Rating/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/rules" element={<Rules/>} />
+        <Route path="/privacyPolicy" element={<PrivacyPolicy/>} />
         {/* ... */}
-        <Route path="/404" Component={ () => (<div>404</div>)}/>
+        <Route path="/404" element={ () => (<div>404</div>)}/>
         {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
       </Routes>
       <Footer />

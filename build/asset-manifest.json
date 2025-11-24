@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3bd6b17.css",
-    "main.js": "/static/js/main.7e154ba1.js",
+    "main.js": "/static/js/main.a21a2b78.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
     "static/media/LosinoeNews2.png": "/static/media/LosinoeNews2.427a5dfdc88bede6ae34.png",
     "static/media/gameplay7.jpg": "/static/media/gameplay7.2bc443a9f79f516c2ca9.jpg",
@@ -50,11 +50,11 @@
     "static/media/gameplay5.jpg": "/static/media/gameplay5.3c9c0b5a9284a55c0468.jpg",
     "index.html": "/index.html",
     "main.a3bd6b17.css.map": "/static/css/main.a3bd6b17.css.map",
-    "main.7e154ba1.js.map": "/static/js/main.7e154ba1.js.map",
+    "main.a21a2b78.js.map": "/static/js/main.a21a2b78.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3bd6b17.css",
-    "static/js/main.7e154ba1.js"
+    "static/js/main.a21a2b78.js"
   ]
 }
