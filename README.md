@@ -35,20 +35,13 @@ npm i --force
 В каталоге проекта вы можете запустить:
 
 ```bash
-npm start
+npm run build
 ```  
 
 Запускает приложение в режиме разработки. Чтобы просмотреть его в браузере,  
-откройте http://localhost:3000 .  
+откройте http://localhost:8000 .  
 
-Чтобы запустить _backend_, напишите следующую команду:
-
-```bash
-cd backend/public
-php -S localhost:8000
-```  
-
-Чтобы зайти в _Adminer_, скачайте _Docker Desktop_ и в кансоле напишите следующую команду:
+Чтобы зайти в _Adminer_, скачайте _Docker Desktop_ и в кoнсоле напишите следующую команду:
 
 ```bash
 docker compose up
