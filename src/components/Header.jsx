@@ -15,13 +15,14 @@ export default function Header() {
       <Navbar.Toggle aria-controls="rf4-navbar" />
       <Navbar.Collapse id="rf4-navbar">
         <Nav className="ml-auto">
-          <Link to="/download">{("Скачать игру")}</Link>
-          <Link to="/news">{("Новости")}</Link>
-          <Link to="/media">{("Медиа")}</Link>
-          <Link to="/rating">{("Рейтинг")}</Link>
-          <Link to="/forum">{("Форум")}</Link>
-          <Link to="/login">{("Войти")}</Link>
-          <Link to="/register">{("Регистрация")}</Link>
+          <Link to="/" className="nav-link">{("Главная страница")}</Link>
+          <Link to="/download" className="nav-link">{("Скачать игру")}</Link>
+          <Link to="/news" className="nav-link">{("Новости")}</Link>
+          <Link to="/media" className="nav-link">{("Медиа")}</Link>
+          <Link to="/rating" className="nav-link">{("Рейтинг")}</Link>
+          <Link to="/forum" className="nav-link">{("Форум")}</Link>
+          <Link to="/login" className="nav-link">{("Войти")}</Link>
+          <Link to="/register" className="nav-link">{("Регистрация")}</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
