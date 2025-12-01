@@ -43,99 +43,99 @@ const screenshots = [
   },
    {
     src: Fish1,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 4',
   },
    {
     src: Fish2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 5',
   },
    {
     src: Fish3,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 6',
   },
    {
     src: Fish4,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 7',
   },
    {
     src: Gameplay1,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 8',
   },
    {
     src: Gameplay2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 9',
   },
    {
     src: Gameplay3,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 10',
   },
    {
     src: Gameplay4,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 11',
   },
   {
     src: Gameplay5,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 12',
   },
   {
     src: Gameplay6,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 13',
   },
   {
     src: Gameplay7,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 14',
   },
   {
     src: Home1,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 15',
   },
   {
     src: Komarinoe2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 16',
   },
   {
     src: Krab,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 17',
   },
   {
     src: Spinning1,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 18',
   },
   {
     src: Spinning2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 19',
   },
   {
     src: Spinning3,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 20',
   },
   {
     src: Spinning4,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 21',
   },
   {
     src: Spinning5,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 22',
   },
   {
     src: Spinning6,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 23',
   },
   {
     src: Tunguska2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 24',
   },
   {
     src: Tunguska3,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 25',
   },
   {
     src: Yantarnoe2,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 26',
   },
   {
     src: Yantarnoe3,
-    alt: 'Скриншот 3',
+    alt: 'Скриншот 27',
   }
 ];
 

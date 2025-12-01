@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer className="bg-dark text-light py-4 mt-auto">
@@ -16,8 +17,8 @@ const Footer = () => (
             <Navbar.Toggle aria-controls="rf4-navbar" />
             <Navbar.Collapse id="rf4-navbar">
               <Nav className="ml-auto">
-                <Nav.Link href="/privacyPolicy">{("Политика конфиденциальности")}</Nav.Link>
-                <Nav.Link href="/rules">{("Правила")}</Nav.Link>
+                <Link to="/privacyPolicy" className="nav-link">{("Политика конфиденциальности")}</Link>
+                <Link to="/rules" className="nav-link">{("Правила")}</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

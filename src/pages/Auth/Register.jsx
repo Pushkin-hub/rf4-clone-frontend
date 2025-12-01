@@ -23,7 +23,7 @@ const Register = () => {
     }
 
     try {
-      const response = axios.post('http://localhost:5000/api/register'); // Замените URL при необходимости
+      const response = await axios.post('http://localhost:8000/api/register'); // Замените URL при необходимости
 
       console.log('Успешная регистрация:', response.data);
 

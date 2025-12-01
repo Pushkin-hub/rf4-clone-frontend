@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
+
 
 // Моковые данные рейтинга
 const ratingList = [

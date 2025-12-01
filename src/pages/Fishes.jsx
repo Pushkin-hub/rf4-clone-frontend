@@ -6,7 +6,7 @@ export default function Fishes() {
   const [fishes, setFishes] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/fishes.php").then(r => setFishes(r.data));
+    axios.get("/api").then(r => setFishes(r.data));
   }, []);
 
   return (
