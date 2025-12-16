@@ -226,7 +226,7 @@ const Waters = () => {
         {watersList.map(water => (
           <Col lg={6} key={water.id} className="mb-4">
             <Card className="h-100 shadow-sm">
-              <Card.Img variant="top" src={water.image} alt={water.name} />
+              <Card.Img variant="top" src={water.image} alt={water.name} className='h_img-45'/>
               <Card.Body>
                 <Card.Title>{water.name}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{water.location}</Card.Subtitle>

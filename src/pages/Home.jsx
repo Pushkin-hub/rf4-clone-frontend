@@ -12,8 +12,6 @@ const Home = () => {
           <Col md={6}>
             <h1>{('home.title', 'Русская рыбалка 4 — симулятор для настоящих рыбаков!')}</h1>
             <p>{('home.description', 'Погрузитесь в атмосферу настоящей рыбалки в лучших водоемах России и мира!')}</p>
-            <Button href="/download" variant="success" size="lg" className="me-2">{('home.download', 'Скачать игру')}</Button>
-            <Button href="/news" variant="outline-secondary" size="lg">{('home.news', 'Новости проекта')}</Button>
           </Col>
           <Col md={6} className="d-none d-md-block">
             <img src= {Logo} alt="Главная картинка" className="img-fluid rounded" />
