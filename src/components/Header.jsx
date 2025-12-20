@@ -20,7 +20,7 @@ export default function Header() {
           <Link to="/news" className="nav-link">{("Новости")}</Link>
           <Link to="/media" className="nav-link">{("Медиа")}</Link>
           <Link to="/rating" className="nav-link">{("Рейтинг")}</Link>
-          <Link to="/forum" className="nav-link">{("Форум")}</Link>
+          <Link to="https://rf4game.ru/forum/" className="nav-link">{("Форум")}</Link>
           <Link to="/login" className="nav-link">{("Войти")}</Link>
           <Link to="/register" className="nav-link">{("Регистрация")}</Link>
         </Nav>

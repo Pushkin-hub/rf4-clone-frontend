@@ -27,7 +27,7 @@ const App = () => {
         <Route exact path="/" element={<Home/>} />
         <Route path="/fishes" element={<Fishes/>} />
         <Route path="/waters" element={<Waters/>} />
-        <Route path="/forum" element={<Forum/>} />
+        <Route path="https://rf4game.ru/forum/" element={<Forum/>} />
         <Route path="/download" element={<Download/>} />
         <Route path="/news" element={<News/>} />
         <Route path="/media" element={<Media/>} />
